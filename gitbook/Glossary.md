@@ -1,7 +1,7 @@
 <!--
  * @Author: Loren
  * @Date: 2022-04-11 21:03:51
- * @LastEditTime: 2022-04-12 00:22:03
+ * @LastEditTime: 2022-04-13 22:39:04
  * @FilePath: /c_plus_plus_book/gitbook/Glossary.md
  * @Description: C Plus Plus Book Glossary.
  * 
@@ -55,3 +55,5 @@
 * 数据类型(data type)
   
    数据类型定义了**数据的意义**以及**如何对其进行操作**。
+
+   
