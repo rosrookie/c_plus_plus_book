@@ -1,7 +1,7 @@
 <!--
  * @Author: Loren
  * @Date: 2022-04-11 20:03:53
- * @LastEditTime: 2022-04-14 01:25:16
+ * @LastEditTime: 2022-04-14 01:30:22
  * @FilePath: /c_plus_plus_book/gitbook/Chapter1.md
  * @Description: Chapter1 description.
  * 
@@ -242,12 +242,13 @@ int &refvalue = value;  // 引用。变量 refvalue 指向 value.(换句话说�
    ```C++
    #include <iostream>
 
-    int main(){
-    int x = 0;
-    int &ref_x = x;
-    std::cout << &x << " " << &ref_x << std::endl;
-    return 0;
-}
+   int main()
+   {
+     int x = 0;
+     int &ref_x = x;
+     std::cout << &x << " " << &ref_x << std::endl;
+     return 0;
+   }
    ```
 
    输出为:
