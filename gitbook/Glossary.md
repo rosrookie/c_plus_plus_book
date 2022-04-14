@@ -1,7 +1,7 @@
 <!--
  * @Author: Loren
  * @Date: 2022-04-11 21:03:51
- * @LastEditTime: 2022-04-13 22:39:04
+ * @LastEditTime: 2022-04-15 00:31:23
  * @FilePath: /c_plus_plus_book/gitbook/Glossary.md
  * @Description: C Plus Plus Book Glossary.
  * 
@@ -56,4 +56,35 @@
   
    数据类型定义了**数据的意义**以及**如何对其进行操作**。
 
-   
+* 声明符
+  
+  在定义语句中，声明符又叫变量或对象。
+
+* 类型修饰符
+
+  用于修饰声明符(变量)的类型的符号。例如： `&` `*` `const` 。  
+
+* 常量表达式(const expression)
+  
+  指值不变，并且在编译过程中就能计算结果的表达式。
+
+* 常量指针(const pointer)
+
+  常量指针是一种指针，该指针的值永远不会发生变化。且常量指针必须 **被初始化** 。即`int *cosnt ptr = nullptr;`
+
+* 顶层`const`(top-level)
+  
+  表示 **任意对象本身** 都是常量，当一个对象(变量)被顶层 `const` 修饰的时候，**必须初始化**。
+  ```C++
+  const int x = 10;          //顶层 conste
+  int *const ptr  = &y;  // 顶层 const
+  ```
+  常量指针就是一种顶层`const`。
+
+* 指向常量的指针(pointer to const)
+  
+  指向常量的指针，表示指针所指向的对象是一个常量。不能用于改变所指对象的值。
+
+* 底层`const`(low-level const)
+  
+  只与指针和引用等复合类型有关，表面所指向的对象是一个常量。指向常量的指针就是一个底层`const`
