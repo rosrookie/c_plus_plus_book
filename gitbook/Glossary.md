@@ -1,7 +1,7 @@
 <!--
  * @Author: Loren
  * @Date: 2022-04-11 21:03:51
- * @LastEditTime: 2022-04-15 00:31:23
+ * @LastEditTime: 2022-05-05 22:48:41
  * @FilePath: /c_plus_plus_book/gitbook/Glossary.md
  * @Description: C Plus Plus Book Glossary.
  * 
@@ -88,3 +88,11 @@
 * 底层`const`(low-level const)
   
   只与指针和引用等复合类型有关，表面所指向的对象是一个常量。指向常量的指针就是一个底层`const`
+
+* 拷贝初始化(copy initialization)
+
+  使用 `=` 去初始化一个变量。编译器会将等号右侧的值拷贝到新创建的对象中去。例如：`std::string s1 = "Hello";`
+
+* 直接初始化(direct initialization)
+
+  不使用 `=` 去初始化一个对象。而是使用括号的方式。例如： `std::string s2("Hello");`
