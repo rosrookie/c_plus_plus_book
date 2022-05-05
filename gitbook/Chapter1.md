@@ -589,4 +589,37 @@ constexpr int mf = 20;         // 20是常量表达式
 constexpr int limit = mf + 1;  // mf + 1 是常量表达式
 ```
 
-在后面会将 `constexpr` 函数(TODO)
+在后面会讲 `constexpr` 函数(TODO)
+
+## 处理类型
+
+### 类型别名
+**类型别名(type alias)**，是一个名字，是 **某种类型的同义词**。(和引用类似但是又有不同)。
+
+类型别名能让复杂的类型变得简单明了、已于理解和使用，还能帮助程序员清楚知道使用该了类型的目的。
+
+#### 定义别名的方法
+1. 传统方法，关键字 `typedef`
+  ```C++
+  typedef double wages;  // wages 是 double 的同义词
+  wages pi = 3.1415;
+  ```
+
+2. 别名声明(alias declaration)
+  C++11新标准可以使用关键字 `using` 来定义类型别名。
+  ```C++
+  using MyInt = int;
+  MyInt x = 3;
+  ```
+
+推荐使用 `using`，因为更加直观，特别是在数组中。例如：
+```C++
+typedef char MyCharArr[4];
+using MyCharArr = char[4];
+```
+
+#### 指针、常量和类型别名
+如果某个类型别名指代的复合类型或常量(实际工程会经常看到这样)，那么把这个类型别名用到声明语句中就会产生意想不到的后果。TODO
+
+
+## auto类型说明符
